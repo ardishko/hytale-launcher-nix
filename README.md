@@ -1,3 +1,7 @@
+# Why does this fork exist?
+
+The original flake unfortunately doesn't check for build errors and It blocks the entire NixOS rebuild upon trying to update the launcher. This fork adds a github action that builds the derivation first to see if it fails while building and if successful, merges the update.
+
 # Hytale Launcher for Nix
 
 [![Build Status](https://github.com/JPyke3/hytale-launcher-nix/actions/workflows/build.yml/badge.svg)](https://github.com/JPyke3/hytale-launcher-nix/actions/workflows/build.yml)
